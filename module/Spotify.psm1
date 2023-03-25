@@ -45,7 +45,8 @@ function Connect-SpotifyApi {
     [CmdletBinding(PositionalBinding = $false)]
     param(
         [Parameter(Position = 0)]
-        [string] $StatePath = "$HOME/spotify-pwsh-state.xml",
+        # [string] $StatePath = "$HOME/spotify-pwsh-state.xml",
+        [string] $StatePath = "C:/Users/jack0/Documents/Mycodespace/spotify-powershell/spotify-pwsh-state.xml",
         [switch] $Force,
         [string] $ClientId = "",
         [string[]] $Scope = @(
