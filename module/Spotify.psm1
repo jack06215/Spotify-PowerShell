@@ -615,7 +615,8 @@ function Connect-SpotifyApi {
     [CmdletBinding(PositionalBinding = $false)]
     param(
         [Parameter(Position = 0)]
-        [string] $StatePath = "$HOME/spotify-pwsh-state.xml",
+        # [string] $StatePath = "$HOME/spotify-pwsh-state.xml",
+        [string] $StatePath = "C:/Users/jack0/Documents/Mycodespace/spotify-powershell/spotify-pwsh-state.xml",
         [switch] $Force,
         [string] $ClientId = "",
         [string[]] $Scope = @(
@@ -652,14 +653,14 @@ function Connect-SpotifyApi {
             Date       = Get-Date 
         }
 
-        Start-Process "https://accounts.spotify.com/authorize?client_id=$($state.Credential.UserName)&response_type=code&scope=$($state.Scope)&redirect_uri=https://lennyomg.github.io/Spotify-PowerShell/index.html" | Out-Null
+        Start-Process "https://accounts.spotify.com/authorize?client_id=$($state.Credential.UserName)&response_type=code&scope=$($state.Scope)&redirect_uri=https://jwt.ms" | Out-Null
         Write-Host "Proceed in a browser and copy the autorization code ('code' GET paramater) to the clipboard."
         Pause
     
         $state.Token = Invoke-RestMethod `
             -Uri "https://accounts.spotify.com/api/token" `
             -Method Post `
-            -Body "grant_type=authorization_code&code=$(Get-Clipboard)&redirect_uri=https://lennyomg.github.io/Spotify-PowerShell/index.html" `
+            -Body "grant_type=authorization_code&code=$(Get-Clipboard)&redirect_uri=https://jwt.ms" `
             -Authentication Basic `
             -Credential $state.Credential `
             -ContentType "application/x-www-form-urlencoded"

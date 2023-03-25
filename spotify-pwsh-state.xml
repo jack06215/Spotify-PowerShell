@@ -1,0 +1,47 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <Obj N="Credential" RefId="1">
+        <TN RefId="1">
+          <T>System.Management.Automation.PSCredential</T>
+          <T>System.Object</T>
+        </TN>
+        <ToString>System.Management.Automation.PSCredential</ToString>
+        <Props>
+          <S N="UserName">d46b88c4264a4208b3a423d590f6a9e8</S>
+          <SS N="Password">01000000d08c9ddf0115d1118c7a00c04fc297eb01000000055027f0783b3e419ce3a027dd1dc41b0000000002000000000010660000000100002000000087e7ee4571907cec1d28fa8bb0e02dceebe8d2ce32f13b1776a71b86c86dcde3000000000e8000000002000020000000613f8a5777f778e33a4a7d2e4be7617fab12d1e742f6fe941616a31007368fa450000000b25c2ddf6da2b799f20c290ebf877bced2563a324e5383659f333650b400e34330948047effef3fbfccb0cbd0376aefa092c9a0cb11a02fb20b9e627d5e2b8e4c2b209f95715c40dc9c7b84f3eaf2c0d4000000051d57f4af9af306343c3796549243e516ef0199c4a841c05bac6ce39d8308f071a328c504d67a38336076905e1cae64facbc48af7fbec12848f98995aa5a241a</SS>
+        </Props>
+      </Obj>
+      <S N="Scope">ugc-image-upload user-modify-playback-state user-read-playback-state user-read-currently-playing user-follow-modify user-follow-read user-read-recently-played user-read-playback-position user-top-read playlist-read-collaborative playlist-modify-public playlist-read-private playlist-modify-private app-remote-control streaming user-read-email user-read-private user-library-modify user-library-read</S>
+      <Obj N="Token" RefId="2">
+        <TNRef RefId="0" />
+        <MS>
+          <S N="access_token">BQBjM0MLi9OULrx342XIcElEaST3MB5uaU2IBnleo37l2Y3Jwqe2oJ_x005F_xnYpDQR7OYBq09qXjZWZXAJufeTfG5qYXL8GK6e8VjFcythz_iecOg0OVFAhHHAoDN-7th65dOLOK2kFWDgUHqBpPVE8tYwJARBBVEsT3FIpN5IR84QZW8xgItabiRtqi2bS-UHSUNqB-AxDPurZMre-Ar_UnJ7vz_p7TQGYgG6BxSklVonJZ_HJEQsOCYgwLLo3gXyLV4HQFfpBBYg2ceX7IOOxoNbE4-inRH5u9ZoL3eX-I7jP0-2y7fRXRCBb0aKXqLgMN</S>
+          <S N="token_type">Bearer</S>
+          <I64 N="expires_in">3600</I64>
+          <S N="refresh_token">AQDWtuEOO5eJfhFz8990a10lcuFoZhGdjsjxLhoQvViwQUBYxXWqP9xdT8bpjdInKhyYjRdb1JYfsjxga1EKW4HMGnSiasLu2MoZj0_YsC1B-rngvOuct8O0d0cQjrfTj_8</S>
+          <S N="scope">playlist-read-private playlist-read-collaborative ugc-image-upload user-follow-read playlist-modify-private user-read-email user-read-private app-remote-control streaming user-modify-playback-state user-follow-modify user-library-read user-library-modify playlist-modify-public user-read-playback-state user-read-currently-playing user-read-recently-played user-read-playback-position user-top-read</S>
+        </MS>
+      </Obj>
+      <Obj N="Date" RefId="3">
+        <DT>2023-03-25T23:21:05.6165474+09:00</DT>
+        <MS>
+          <Obj N="DisplayHint" RefId="4">
+            <TN RefId="2">
+              <T>Microsoft.PowerShell.Commands.DisplayHintType</T>
+              <T>System.Enum</T>
+              <T>System.ValueType</T>
+              <T>System.Object</T>
+            </TN>
+            <ToString>DateTime</ToString>
+            <I32>2</I32>
+          </Obj>
+        </MS>
+      </Obj>
+    </MS>
+  </Obj>
+</Objs>
